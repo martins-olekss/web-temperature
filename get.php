@@ -1,7 +1,6 @@
 <?php
 /**
  * Returns last recorded temperature
- * TODO: Expect possibility to return last recorder tenperature for specific sensor
  */
 
 $filePath='data';

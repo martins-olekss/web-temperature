@@ -9,13 +9,9 @@
 // file name:
 // w1_slave
 
-// Sensor serial
-// 0000039f74f6
-
 $sensorId = '39f74f6';
 $fullFilePath = '/sys/bus/w1/devices/28-00000'.$sensorId.'/w1_slave';
 
-//$fullFilePath = 'dummy_reading';
 $resultFile = 'data';
 $sleep = 10;
 
@@ -35,6 +31,7 @@ function writeResult($resultFile, $result) {
     fclose($resultFile);
 }
 
+echo "Collecting measurements";
 while(true) {
     $cleanTemp = readTemp($fullFilePath);
     $tempValue = substr($cleanTemp, 2);
