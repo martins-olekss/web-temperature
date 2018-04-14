@@ -1,0 +1,40 @@
+body {
+    background-color: #333;
+}
+
+#wrapper {
+    width: 300px;
+    margin: 0 auto;
+}
+#debug {
+    display: none;
+}
+
+#content {
+    padding: 10px;
+    background-color: #fff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+}
+
+#temperature-value {
+    display: block;
+    color: #37c123;
+    text-shadow: 3px 3px 2px #000;
+    font-size: 82px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+
+#temperature-time {
+    display: block;
+    font-size: 18px;
+}
+
+#temperature-id {
+    font-size: 9px;
+}
